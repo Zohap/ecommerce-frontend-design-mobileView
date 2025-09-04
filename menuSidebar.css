@@ -1,0 +1,134 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  z-index: 1000;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  display: block; /* always visible */
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  transform: translateX(-100%); /* always hidden by default */
+}
+.sidebar-header {
+  background-color: #ddd;
+  margin-top: 70px;               
+  padding: 20px;           
+  text-align: center;      
+}
+
+.sidebar-header img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;      /* perfectly round */
+  display: block;
+  margin: 0 auto;          /* center horizontally */
+}
+
+.sign-in {
+  margin-top: 15px;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  z-index: 998;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Main content */
+main {
+  margin-left: 0; /* no push since sidebar is hidden initially */
+  padding: 80px 20px 20px;
+  width: 100%;
+}
+.sign-in a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.sidebar-menu {
+  list-style: none;   
+  padding: 0;    
+  margin-top: 20px;     
+  
+}     
+.sidebar-menu a{
+  text-decoration: none;
+  color: black;
+}
+.sidebar-menu li{
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.first-part,.second-part{
+  border-bottom: 1px solid gray;
+}
+.second-part{
+  margin-top: 20px;
+}
+.third-part{
+  margin-top: 20px;
+}
+.sidebar-menu li:hover{
+    background-color: antiquewhite;
+  }
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .sidebar-header{
+    padding-top: 10px;
+  }
+  .sidebar-header img{
+    height: 100px;
+    width: 100px;
+  }
+  .sign-in{
+    margin-top: 10px;
+  }
+  .sidebar-menu li:hover{
+    background-color: antiquewhite;
+  }
+}

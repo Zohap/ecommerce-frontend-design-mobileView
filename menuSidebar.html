@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Sidebar</title>
+  <link rel="stylesheet" href="menuSidebar.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header with hamburger for mobile -->
+  <header>
+    <button id="menu-toggle" class="hamburger">☰</button>
+    
+  </header>
+
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+     <div class="sidebar-header">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDwmG52pVI5JZfn04j9gdtsd8pAGbqjjLswg&s" alt="User Avatar" class="user-avatar">
+      <div class="sign-in">
+        <a href="#" class="signin-link">Sign in | Register</a>
+      </div>
+    </div>
+    
+     <ul class="sidebar-menu">
+      <div class="first-part">
+        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fa fa-th-large"></i> Categories</a></li>
+      <li><a href="#"><i class="fa fa-heart"></i> Favorites</a></li>
+      <li><a href="#"><i class="fa fa-box"></i> My orders</a></li>
+      <br>
+      </div>
+
+      <div class="second-part">
+        <li><a href="#"><i class="fa fa-globe"></i> English | USD</a></li>
+      <li><a href="#"><i class="fa fa-envelope"></i> Contact us</a></li>
+      <li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
+      <br>
+      </div>
+      
+      <div class="third-part">
+        <li><a href="#"> User agreement</a></li>
+      <li><a href="#"> Partnership</a></li>
+      <li><a href="#"> Privacy policy</a></li>
+      </div>
+    </ul>
+  </aside>
+
+  <!-- Overlay for mobile -->
+  <div id="overlay" class="overlay"></div>
+
+  <main>
+    <h1>Welcome to My Store</h1>
+  </main>
+
+  <script src="menuSidebar.js"></script>
+</body>
+</html>

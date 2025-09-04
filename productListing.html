@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECommerce-frontend design</title>
+  <link rel="stylesheet" href="productListing.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="left-section">
+      <div class="brand">
+        <i class="fas fa-store"></i>
+        <span>Brand</span>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <div class="separator"></div>
+        <select>
+          <option>All Categories</option>
+          <option>Electronics</option>
+          <option>Books</option>
+          <option>Clothing</option>
+        </select>
+        <button class="search-btn">Search</button>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div class="nav-icon">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </div>
+      <div class="nav-icon">
+        <i class="fas fa-envelope"></i>
+        <span>Msg</span>
+      </div>
+      <div class="nav-icon">
+        <i class="fas fa-box"></i>
+        <span>Order</span>
+      </div>
+      <div class="nav-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span>MyCart</span>
+      </div>
+    </div>
+  </nav>
+  <hr>
+
+<!--after header-->
+<nav class="top-nav">
+  <div class="nav-left">
+    <div class="dropdown-container">
+      <button class="dropdown-toggle">All Categories ▾</button>
+      <div class="dropdown-list">
+        <a href="#">Electronics</a>
+        <a href="#">Books</a>
+        <a href="#">Clothing</a>
+        <a href="#">Home & Kitchen</a>
+      </div>
+    </div>
+
+    <span class="nav-link">Hot Offers</span>
+    <span class="nav-link">Gift Boxes</span>
+    <span class="nav-link">Projects</span>
+    <span class="nav-link">Menu Item</span>
+
+    <div class="dropdown-container">
+      <button class="dropdown-toggle">Help ▾</button>
+      <div class="dropdown-list">
+        <a href="#">Customer Service</a>
+        <a href="#">FAQs</a>
+        <a href="#">Returns</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <div class="dropdown-container">
+      <button class="dropdown-toggle">English, USD ▾</button>
+      <div class="dropdown-list">
+        <a href="#">English, USD</a>
+        <a href="#">Español, EUR</a>
+        <a href="#">Français, EUR</a>
+      </div>
+    </div>
+
+    <div class="dropdown-container">
+  <button class="dropdown-toggle">Ship to <img src="https://flagcdn.com/us.svg" width="20" alt="USA Flag"> ▾</button>
+  <div class="dropdown-list flag-only">
+    <a href="#"><img src="https://flagcdn.com/us.svg" width="24" alt="USA"></a>
+    <a href="#"><img src="https://flagcdn.com/gb.svg" width="24" alt="UK"></a>
+    <a href="#"><img src="https://flagcdn.com/ca.svg" width="24" alt="Canada"></a>
+    <a href="#"><img src="https://flagcdn.com/in.svg" width="24" alt="India"></a>
+    <a href="#"><img src="https://flagcdn.com/au.svg" width="24" alt="Australia"></a>
+  </div>
+</div>
+  </div>
+</nav>
+
+<div class="breadcrumb">
+ <p class="bread"> Home &gt; Clothings &gt; Men's Wear &gt; Summer Clothing</p>
+</div>
+
+<!--mid-->
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar-mid">
+      <div class="filter-group">
+        <hr>
+        <h4>Category</h4>
+        <label><input type="checkbox" checked> Mobile accessory</label>
+        <label><input type="checkbox"> Electronics</label>
+        <label><input type="checkbox"> Smartphones</label>
+        <label><input type="checkbox"> Modern tech</label>
+        <a href="#">See all</a>
+      </div>
+      <hr>
+      <div class="filter-group">
+        <h4>Brands</h4>
+        <label><input type="checkbox" checked> Samsung</label>
+        <label><input type="checkbox" checked> Apple</label>
+        <label><input type="checkbox"> Huawei</label>
+        <label><input type="checkbox" checked> Poco</label>
+        <label><input type="checkbox"> Lenovo</label>
+        <a href="#">See all</a>
+      </div>
+      <hr>
+      <div class="filter-group">
+        <h4>Features</h4>
+        <label><input type="checkbox" checked> Metallic</label>
+        <label><input type="checkbox"> Plastic cover</label>
+        <label><input type="checkbox"> 8GB Ram</label>
+        <label><input type="checkbox"> Super power</label>
+        <label><input type="checkbox"> Large Memory</label>
+        <a href="#">See all</a>
+      </div>
+      <hr>
+     <div class="filter-group">
+  <h4 class="dropdown-toggle-mid">Price range ▾</h4>
+  <div class="dropdown-content-mid">
+    <label><input type="checkbox"> Under $100</label><br>
+    <label><input type="checkbox"> $100 - $500</label><br>
+    <label><input type="checkbox"> Above $500</label>
+  </div>
+</div>
+<hr>
+<div class="filter-group">
+  <h4 class="dropdown-toggle-mid">Condition ▾</h4>
+  <div class="dropdown-content-mid">
+    <label><input type="checkbox"> New</label><br>
+    <label><input type="checkbox"> Refurbished</label><br>
+     <label><input type="checkbox"> Brand new</label><br>
+      <label><input type="checkbox"> Old items</label>
+  </div>
+</div>
+<hr>
+<div class="filter-group">
+  <h4 class="dropdown-toggle-mid">Ratings ▾</h4>
+  <div class="dropdown-content-mid">
+    <label><input type="checkbox"> ★★★★☆</label><br>
+    <label><input type="checkbox"> ★★★☆☆</label><br>
+    <label><input type="checkbox"> ★★☆☆☆</label>
+  </div>
+</div>
+
+
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content-mid">
+      <div class="topbar-mid">
+        <div class="left-mid">12,911 items in <strong>Mobile accessory</strong></div>
+        <div class="right-mid">
+          <label><input type="checkbox"> Verified only</label>
+          <select class="w">
+            <option >Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+          </select>
+          <div class="right-s">
+            <i class="fa fa-th-large"></i>
+          <i class="fa fa-list"></i>
+          </div>
+        </div>
+      </div>
+      <div class="filter-tags">
+        <span>Samsung <i class="fa fa-times"></i></span>
+        <span>Apple <i class="fa fa-times"></i></span>
+        <span>Poco <i class="fa fa-times"></i></span>
+        <span>Metallic <i class="fa fa-times"></i></span>
+        <span>4 star <i class="fa fa-times"></i></span>
+        <span>3 star <i class="fa fa-times"></i></span>
+        <a href="#">Clear all filter</a>
+      </div>
+      <div class="product-row">
+  <!-- Product Card -->
+  <div class="product-card-mid">
+    <img src="Assets1/red-iphone.png" alt="Product Image">
+    <div class="product-info-mid">
+      <h3>Canon Cmera EOS 2000, Black 10x zoom</h3>
+      <div class="price-section">
+        <span class="current-price">$998.00</span>
+        <span class="old-price">$1128.00</span>
+      </div>
+      <div class="rating">
+        ★★★★☆ <span class="rating-value">7.5</span> · <span class="orders">154 orders</span> · <span class="free-shipping">Free Shipping</span>
+      </div>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <a href="#" class="view-details">View details</a>
+    </div>
+  </div>
+  <div class="product-card-mid">
+    <img src="Assets1/mobile.png" alt="Product Image">
+    <div class="product-info-mid">
+      <h3>Canon Cmera EOS 2000, Black 10x zoom</h3>
+      <div class="price-section">
+        <span class="current-price">$998.00</span>
+        <span class="old-price">$1128.00</span>
+      </div>
+      <div class="rating">
+        ★★★★☆ <span class="rating-value">7.5</span> · <span class="orders">154 orders</span> · <span class="free-shipping">Free Shipping</span>
+      </div>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <a href="#" class="view-details">View details</a>
+    </div>
+  </div>
+  <div class="product-card-mid">
+    <img src="Assets1/Tablet.jpg" alt="Product Image">
+    <div class="product-info-mid">
+      <h3>Canon Cmera EOS 2000, Black 10x zoom</h3>
+      <div class="price-section">
+        <span class="current-price">$998.00</span>
+        <span class="old-price">$1128.00</span>
+      </div>
+      <div class="rating">
+        ★★★★☆ <span class="rating-value">7.5</span> · <span class="orders">154 orders</span> · <span class="free-shipping">Free Shipping</span>
+      </div>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <a href="#" class="view-details">View details</a>
+    </div>
+  </div>
+  <div class="product-card-mid">
+    <img src="Assets1/laptop.jpg" alt="Product Image">
+    <div class="product-info-mid">
+      <h3>Canon Cmera EOS 2000, Black 10x zoom</h3>
+      <div class="price-section">
+        <span class="current-price">$998.00</span>
+        <span class="old-price">$1128.00</span>
+      </div>
+      <div class="rating">
+        ★★★★☆ <span class="rating-value">7.5</span> · <span class="orders">154 orders</span> · <span class="free-shipping">Free Shipping</span>
+      </div>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <a href="#" class="view-details">View details</a>
+    </div>
+  </div>
+  <div class="product-card-mid">
+    <img src="Assets1/watch.jpg" alt="Product Image">
+    <div class="product-info-mid">
+      <h3>Canon Cmera EOS 2000, Black 10x zoom</h3>
+      <div class="price-section">
+        <span class="current-price">$998.00</span>
+        <span class="old-price">$1128.00</span>
+      </div>
+      <div class="rating">
+        ★★★★☆ <span class="rating-value">7.5</span> · <span class="orders">154 orders</span> · <span class="free-shipping">Free Shipping</span>
+      </div>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <a href="#" class="view-details">View details</a>
+    </div>
+  </div>
+  <div class="product-card-mid">
+    <img src="Assets1/headphones.jpg" alt="Product Image">
+    <div class="product-info-mid">
+      <h3>Canon Cmera EOS 2000, Black 10x zoom</h3>
+      <div class="price-section">
+        <span class="current-price">$998.00</span>
+        <span class="old-price">$1128.00</span>
+      </div>
+      <div class="rating">
+        ★★★★☆ <span class="rating-value">7.5</span> · <span class="orders">154 orders</span> · <span class="free-shipping">Free Shipping</span>
+      </div>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <a href="#" class="view-details">View details</a>
+    </div>
+  </div>
+
+</div>
+
+  </main></div>
+ <!-- Similar Products -->
+    <div class="similar-products">
+      <h3>Similar products</h3>
+      <div class="similar-list">
+        <div class="product-card">
+          <img src="Assets1/pant-blue.jpg" alt="">
+          <p>$57.70</p>
+        </div>
+        <div class="product-card">
+          <img src="Assets1/blazer.jpg" alt="">
+          <p>$57.70</p>
+        </div>
+        <div class="product-card">
+          <img src="Assets1/watch.jpg" alt="">
+          <p>$57.70</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add to Cart -->
+    <div class="add-cart">
+      <button id="addToCartBtn">Add to Cart</button>
+    </div>
+
+  <div class="pagination-buttons">
+  <button class="show-count">Show 10</button>
+  <div class="page-nav">
+    <button class="page-btn">&lt;</button>
+    <button class="page-btn active">1</button>
+    <button class="page-btn">2</button>
+    <button class="page-btn">3</button>
+    <button class="page-btn">&gt;</button>
+  </div>
+</div>
+
+
+
+<!--footer-->
+
+<footer class="newsletter-footer">
+  <h2>Subscribe on our newsletter</h2>
+  <p>Get daily news on our upcoming offers from suppliers all over the world</p>
+  <div class="subscribe-form">
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+  </div>
+</footer>
+
+
+<footer class="footer-columns">
+  <div class="footer-container">
+
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <div class="brand">
+        <i class="fas fa-store"></i>
+        <span>Brand</span>
+      </div>
+      <p class="company-info">
+        Best information about the company goes here but lorem ipsum is
+      </p>
+      <div class="social-icons">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h4>About</h4>
+      <p>About Us</p>
+      <p>Find Store</p>
+      <p>Categories</p>
+      <p>Blogs</p>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h4>Partnership</h4>
+      <p>About Us</p>
+      <p>Find Store</p>
+      <p>Categories</p>
+      <p>Blogs</p>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h4>Information</h4>
+      <p>Help Centre</p>
+      <p>Money Refund</p>
+      <p>Shipping</p>
+      <p>Contact Us</p>
+    </div>
+
+    <!-- Column 5 -->
+    <div class="footer-col">
+      <h4>For Users</h4>
+      <p>Login</p>
+      <p>Register</p>
+      <p>Settings</p>
+      <p>My Orders</p>
+    </div>
+
+    <!-- Column 6 -->
+    <div class="footer-col">
+      <h4>Get app</h4>
+      <div class="app-buttons-vertical">
+  <a href="#">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+         alt="Download on the App Store" />
+  </a>
+  <a href="#">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+         alt="Get it on Google Play" />
+  </a>
+</div>
+
+
+
+    </div>
+  </div>
+</footer>
+
+<!-- Bottom Bar -->
+<div class="footer-bottom">
+  <div class="footer-bottom-content">
+    <p>© 2023 Ecommerce.</p>
+    <div id="langSelect">
+  <div class="selected">
+    <img src="https://flagcdn.com/us.svg" alt="USA Flag">
+    <span>English</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+  <ul class="options">
+    <li data-flag="https://flagcdn.com/gb.svg"><img src="https://flagcdn.com/gb.svg" alt="UK"> English (UK)</li>
+    <li data-flag="https://flagcdn.com/fr.svg"><img src="https://flagcdn.com/fr.svg" alt="France"> French</li>
+    <li data-flag="https://flagcdn.com/de.svg"><img src="https://flagcdn.com/de.svg" alt="Germany"> German</li>
+    <li data-flag="https://flagcdn.com/in.svg"><img src="https://flagcdn.com/in.svg" alt="India"> Hindi</li>
+    <li data-flag="https://flagcdn.com/jp.svg"><img src="https://flagcdn.com/jp.svg" alt="Japan"> Japanese</li>
+  </ul>
+</div>
+  </div>
+</div>
+
+<script src="productListing.js"></script>
+</body>
+</html>
